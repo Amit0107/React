@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>React - Template</title>
+    
+    <script src="C://Users/Amit/Desktop/Reactjs/React-Boilerplate-master/React-Boilerplate-master/src/js/react.min.js"></script>
+    <script src="C://Users/Amit/Desktop/Reactjs/React-Boilerplate-master/React-Boilerplate-master/src/js/react.min.js"></script>
+    <script src="C://Users/Amit/Desktop/Reactjs/React-Boilerplate-master/React-Boilerplate-master/src/js/react.min.js"></script>
+</head>
+<body>
+
+    <div id="container"></div>
+
+    <script type="text/babel">
+     var Comment =React.createClass({
+    edit:function () {
+        alert('Editing comment');
+      },
+    remove:function() {
+        alert('Removing comment');
+    },
+    render: function() {
+        return (
+            <div className="commentContainer">
+            <div className="commentText"><Text of whatever</div>
+            <button onClick={this.edit} className="button-primary">Edit</button> 
+            <button onClick={this.remove} className="button-danger">Remove</button>  </div>
+        );
+    }
+});
+
+        ReactDOM.render(
+                <div className="board">
+                <Comment>Hey now</Comment>
+           </div>
+        , document.getElementById('container'));
+                  
+    </script>
+
+</body>
+</html>
